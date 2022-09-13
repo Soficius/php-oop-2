@@ -4,17 +4,17 @@ class Card
 {
   private $number;
   private $CVC;
-  private $ex_sate;
-  private $pay_circuit;
+  private $exDate;
+  private $payCircuit;
   private $balance;
 
-  public function __construct($number, $CVC, $ex_sate, $pay_circuit, $balance)
+  public function __construct($number, $CVC, $exDate, $payCircuit, $balance)
   {
     $this->setNumber($number);
-    $this->setNumber($CVC);
-    $this->setNumber($ex_sate);
-    $this->setNumber($pay_circuit);
-    $this->setNumber($$balance);
+    $this->setCVC($CVC);
+    $this->setExDate($exDate);
+    $this->setPayCircuit($payCircuit);
+    $this->setBalance($balance);
   }
 
   /**
@@ -54,37 +54,37 @@ class Card
   }
 
   /**
-   * Get the value of ex_sate
+   * Get the value of exDate
    */
-  public function getExSate()
+  public function getExDate()
   {
-    return $this->ex_sate;
+    return $this->exDate;
   }
 
   /**
-   * Set the value of ex_sate
+   * Set the value of exDate
    */
-  public function setExSate($ex_sate): self
+  public function setExDate($exDate): self
   {
-    $this->ex_sate = $ex_sate;
+    $this->exDate = $exDate;
 
     return $this;
   }
 
   /**
-   * Get the value of pay_circuit
+   * Get the value of payCircuit
    */
   public function getPayCircuit()
   {
-    return $this->pay_circuit;
+    return $this->payCircuit;
   }
 
   /**
-   * Set the value of pay_circuit
+   * Set the value of payCircuit
    */
-  public function setPayCircuit($pay_circuit): self
+  public function setPayCircuit($payCircuit): self
   {
-    $this->pay_circuit = $pay_circuit;
+    $this->payCircuit = $payCircuit;
 
     return $this;
   }

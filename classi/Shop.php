@@ -11,10 +11,10 @@ class Shop
     public function __construct($name, $pIva, $products, $users, $orders)
     {
         $this->setName($name);
-        $this->setName($pIva);
-        $this->setName($products);
-        $this->setName($users);
-        $this->setName($orders);
+        $this->setPIva($pIva);
+        $this->setProducts($products);
+        $this->setUsers($users);
+        $this->setOrders($orders);
     }
 
     /**
